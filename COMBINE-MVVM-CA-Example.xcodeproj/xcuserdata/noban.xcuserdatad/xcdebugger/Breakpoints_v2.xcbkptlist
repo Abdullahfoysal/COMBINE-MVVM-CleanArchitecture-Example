@@ -30,8 +30,8 @@
             filePath = "COMBINE-MVVM-CA-Example/NetworkLayer/APIClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "dispatch(request:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "COMBINE-MVVM-CA-Example/NetworkLayer/APIClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "dispatch(request:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -55,33 +55,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "71BF49BE-CA17-4A71-A617-A618DE728DBF"
-            shouldBeEnabled = "Yes"
+            uuid = "D7203E4A-FA17-4B01-8BE5-E965E28D0789"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "COMBINE-MVVM-CA-Example/NetworkLayer/APIClient.swift"
+            filePath = "COMBINE-MVVM-CA-Example/PostFeatures/Presentation/ViewModels/PostViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
-            landmarkName = "dispatch(request:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "postNewPost()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "915685B9-6338-46C6-A0DC-3FA98E2B9553"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "COMBINE-MVVM-CA-Example/NetworkLayer/APIClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
-            landmarkName = "dispatch(request:)"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D7203E4A-FA17-4B01-8BE5-E965E28D0789 - 464669f1c0f49af6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "COMBINE_MVVM_CA_Example.PostViewModel.postNewPost() -&gt; ()"
+                  moduleName = "COMBINE-MVVM-CA-Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noban/Documents/IOSDEV/COMBINE-MVVM-CA-Example/COMBINE-MVVM-CA-Example/PostFeatures/Presentation/ViewModels/PostViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "362">
+               </Location>
+               <Location
+                  uuid = "D7203E4A-FA17-4B01-8BE5-E965E28D0789 - 9a145a1f8e64b032"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (COMBINE_MVVM_CA_Example.PostModel) -&gt; () in COMBINE_MVVM_CA_Example.PostViewModel.postNewPost() -&gt; ()"
+                  moduleName = "COMBINE-MVVM-CA-Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noban/Documents/IOSDEV/COMBINE-MVVM-CA-Example/COMBINE-MVVM-CA-Example/PostFeatures/Presentation/ViewModels/PostViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "89">
+               </Location>
+               <Location
+                  uuid = "D7203E4A-FA17-4B01-8BE5-E965E28D0789 - 9a145a1f8e64b0d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (COMBINE_MVVM_CA_Example.PostModel) -&gt; () in COMBINE_MVVM_CA_Example.PostViewModel.postNewPost() -&gt; ()"
+                  moduleName = "COMBINE-MVVM-CA-Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noban/Documents/IOSDEV/COMBINE-MVVM-CA-Example/COMBINE-MVVM-CA-Example/PostFeatures/Presentation/ViewModels/PostViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "141">
+               </Location>
+               <Location
+                  uuid = "D7203E4A-FA17-4B01-8BE5-E965E28D0789 - 9a145a1f8e64b0d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (COMBINE_MVVM_CA_Example.PostModel) -&gt; () in COMBINE_MVVM_CA_Example.PostViewModel.postNewPost() -&gt; ()"
+                  moduleName = "COMBINE-MVVM-CA-Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noban/Documents/IOSDEV/COMBINE-MVVM-CA-Example/COMBINE-MVVM-CA-Example/PostFeatures/Presentation/ViewModels/PostViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "113">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

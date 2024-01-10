@@ -38,8 +38,8 @@ class PostViewModel: ObservableObject {
         APIClient.dispatch(APIRouter.PostNewPost(body: postModel))
             .sink { _ in
                 
-            } receiveValue: { _ in
-                    
+            } receiveValue: { response in
+                    print(response)
             }.store(in: &cancelable)
 
     }

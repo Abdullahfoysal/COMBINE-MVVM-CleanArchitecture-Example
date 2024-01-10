@@ -118,6 +118,7 @@ extension Request {
         /// Or set your content type
         /// request.setValue("Your API Token Key",forHTTPHeaderField: HTTPHeaderField.authorization.rawValue)
         request.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
+        request.setValue(ContentType.jsonUTF8.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
         
         return request
     }
@@ -146,13 +147,7 @@ struct NetworkDispather {
                 }
                 
                 //Log Request result
-                Log.info("[\(response.statusCode)] '\(request.url!)'")
-                // Log received data
-                if let receivedDataString = String(data: data, encoding: .utf8) {
-                   Log.info("Received data: \(receivedDataString)")
-               } else {
-                   Log.warning("Unable to convert received data to string")
-               }
+                Log.networkLog(request: request, response: response, data: data)
                 
                 if !(200...299).contains(response.statusCode) {
                     throw httpError(response.statusCode)
