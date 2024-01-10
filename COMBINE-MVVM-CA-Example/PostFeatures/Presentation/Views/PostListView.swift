@@ -16,10 +16,10 @@ struct PostListView: View {
                     PostCommentListView()
                 } label: {
                     VStack(alignment: .leading) {
-                        Text(post.title)
+                        Text(post.title ?? "n/a")
                             .font(.title3)
                             .foregroundColor(.blue)
-                        Text(post.body)
+                        Text(post.body ?? "n/a")
                             .font(.body)
                     }
                     .padding()
@@ -30,6 +30,11 @@ struct PostListView: View {
                 
                 
             }.navigationTitle("Post List View")
+                .toolbar {
+                    Button("Add") {
+                        viewModel.postNewPost()
+                    }
+                }
         }
       
         .onAppear {

@@ -31,6 +31,16 @@ class PostViewModel: ObservableObject {
             } receiveValue: {[weak self] comments in
                 self?.comments  = comments
             }.store(in: &cancelable)
+    }
+    
+    func postNewPost() {
+        let postModel = PostModel(userId: 1, id: 1, title: "foysal title", body: "foysal body")
+        APIClient.dispatch(APIRouter.PostNewPost(body: postModel))
+            .sink { _ in
+                
+            } receiveValue: { _ in
+                    
+            }.store(in: &cancelable)
 
     }
 }

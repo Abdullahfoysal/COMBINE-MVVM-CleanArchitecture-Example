@@ -26,4 +26,15 @@ class APIRouter {
             self.queryParams = queryParams.asDictionary
         }
     }
+    
+    struct PostNewPost: Request {
+        typealias ReturnType = PostModel
+        var path: String = "/posts"
+        var method: HTTPMethod = .post
+        var body: [String : Any]?
+        
+        init(body: PostModel) {
+            self.body = body.asDictionary
+        }
+    }
 }

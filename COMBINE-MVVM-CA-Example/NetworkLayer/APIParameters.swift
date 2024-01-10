@@ -17,4 +17,7 @@ struct APIParameters {
     struct PostCommentParams: Encodable {
         var postId: Int
     }
+    struct AddPostParam: Encodable {
+        var newPost: PostModel
+    }
 }
