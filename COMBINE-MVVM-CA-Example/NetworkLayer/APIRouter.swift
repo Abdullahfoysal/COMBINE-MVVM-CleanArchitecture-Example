@@ -15,4 +15,15 @@ class APIRouter {
         var path: String = "/posts"
         var method: HTTPMethod = .get
     }
+    
+    struct GetPostComments: Request {
+        typealias ReturnType = [Comment]
+        
+        var path: String = "/comments"
+        var queryParams: [String : Any]?
+        
+        init(queryParams: APIParameters.PostCommentParams) {
+            self.queryParams = queryParams.asDictionary
+        }
+    }
 }

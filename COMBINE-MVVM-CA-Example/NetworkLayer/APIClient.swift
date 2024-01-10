@@ -148,11 +148,11 @@ struct NetworkDispather {
                 //Log Request result
                 Log.info("[\(response.statusCode)] '\(request.url!)'")
                 // Log received data
-                   if let receivedDataString = String(data: data, encoding: .utf8) {
-                       Log.info("Received data: \(receivedDataString)")
-                   } else {
-                       Log.warning("Unable to convert received data to string")
-                   }
+                if let receivedDataString = String(data: data, encoding: .utf8) {
+                   Log.info("Received data: \(receivedDataString)")
+                } else {
+                   Log.warning("Unable to convert received data to string")
+                }
                 
                 if !(200...299).contains(response.statusCode) {
                     throw httpError(response.statusCode)

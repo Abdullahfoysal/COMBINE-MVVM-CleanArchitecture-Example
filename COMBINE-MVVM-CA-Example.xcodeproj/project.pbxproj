@@ -22,6 +22,7 @@
 		18DC7A972B4E86A400CC61EE /* APIParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC7A962B4E86A400CC61EE /* APIParameters.swift */; };
 		18DC7A9F2B4E888400CC61EE /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC7A9E2B4E888400CC61EE /* PostViewModel.swift */; };
 		18DC7AA32B4E8C6100CC61EE /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC7AA22B4E8C6100CC61EE /* PostListView.swift */; };
+		18DC7AA52B4EA4B300CC61EE /* PostCommentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC7AA42B4EA4B300CC61EE /* PostCommentListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		18DC7A962B4E86A400CC61EE /* APIParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParameters.swift; sourceTree = "<group>"; };
 		18DC7A9E2B4E888400CC61EE /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		18DC7AA22B4E8C6100CC61EE /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		18DC7AA42B4EA4B300CC61EE /* PostCommentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				18DC7AA22B4E8C6100CC61EE /* PostListView.swift */,
+				18DC7AA42B4EA4B300CC61EE /* PostCommentListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				18DC7A902B4E6AEE00CC61EE /* Log.swift in Sources */,
 				18DC7A8B2B4E4EAC00CC61EE /* APIClient.swift in Sources */,
 				18DC7A972B4E86A400CC61EE /* APIParameters.swift in Sources */,
+				18DC7AA52B4EA4B300CC61EE /* PostCommentListView.swift in Sources */,
 				18AE3CD62B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

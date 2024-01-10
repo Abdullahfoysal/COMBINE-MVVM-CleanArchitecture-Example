@@ -14,3 +14,12 @@ struct PostModel: Codable,Identifiable {
     let title: String
     let body: String
 }
+
+// Mark: - Comment
+struct Comment: Codable,Identifiable {
+    let postId: Int
+    let id: Int
+    let name: String
+    let email: String
+    let body: String
+}
