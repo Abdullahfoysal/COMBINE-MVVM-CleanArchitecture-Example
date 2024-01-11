@@ -22,7 +22,7 @@ struct PostAPIRoute {
         var path: String = "/comments"
         var queryParams: [String : Any]?
         
-        init(queryParams: APIParameters.PostCommentParams) {
+        init(queryParams: PostAPIParameters.PostCommentParams) {
             self.queryParams = queryParams.asDictionary
         }
     }

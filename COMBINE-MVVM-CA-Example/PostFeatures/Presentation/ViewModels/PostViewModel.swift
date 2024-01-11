@@ -32,7 +32,7 @@ class PostViewModel: AbstractViewModel {
     }
     //GET with Query
     func getPostComments(postId: Int) {
-        getCommentListUsecase.execute(PostAPIRoute.GetPostComments(queryParams: APIParameters.PostCommentParams(postId: postId)))
+        getCommentListUsecase.execute(PostAPIRoute.GetPostComments(queryParams: PostAPIParameters.PostCommentParams(postId: postId)))
             .sink { _ in
                 
             } receiveValue: {[weak self] comments in

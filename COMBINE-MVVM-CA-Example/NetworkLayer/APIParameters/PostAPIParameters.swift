@@ -13,7 +13,7 @@ protocol DictionaryConvertor: Codable {}
 /// Structs that containing all parameters that needed for passing data as body or query string to urlrequest
 /// it is cnforming to DictionaryConvertor
 
-struct APIParameters {
+struct PostAPIParameters {
     struct PostCommentParams: Encodable {
         var postId: Int
     }
