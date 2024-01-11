@@ -7,7 +7,7 @@
 
 import Foundation
 
-class APIRouter {
+struct PostAPIRoute {
     //Get Request
     struct GetPosts: Request {
         typealias ReturnType = [PostModel]

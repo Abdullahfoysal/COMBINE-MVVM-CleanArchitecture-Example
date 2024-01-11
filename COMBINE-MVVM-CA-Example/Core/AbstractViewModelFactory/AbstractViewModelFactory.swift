@@ -21,6 +21,10 @@ class ViewModelFactory: AbstractViewModelFactory {
         let getCommentListUsecase = GetCommentListUsecase(postRepository: repository)
         let addNewPostUsecase = AddnewPostUsecase(postRepository: repository)
         
-        return PostViewModel(getPostListUsecase: getPostListUsecase,getCommentListUsecase: getCommentListUsecase,addNewPostUsecase: addNewPostUsecase)
+        return PostViewModel(
+            getPostListUsecase: getPostListUsecase,
+            getCommentListUsecase: getCommentListUsecase,
+            addNewPostUsecase: addNewPostUsecase
+        )
     }
 }

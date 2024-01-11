@@ -28,7 +28,7 @@
 		18DC7A8B2B4E4EAC00CC61EE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC7A8A2B4E4EAC00CC61EE /* APIClient.swift */; };
 		18DC7A8D2B4E64E400CC61EE /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC7A8C2B4E64E400CC61EE /* APIConstants.swift */; };
 		18DC7A902B4E6AEE00CC61EE /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC7A8F2B4E6AEE00CC61EE /* Log.swift */; };
-		18DC7A922B4E845800CC61EE /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC7A912B4E845800CC61EE /* APIRouter.swift */; };
+		18DC7A922B4E845800CC61EE /* PostAPIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC7A912B4E845800CC61EE /* PostAPIRoute.swift */; };
 		18DC7A952B4E84BE00CC61EE /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC7A942B4E84BE00CC61EE /* PostModel.swift */; };
 		18DC7A972B4E86A400CC61EE /* APIParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC7A962B4E86A400CC61EE /* APIParameters.swift */; };
 		18DC7A9F2B4E888400CC61EE /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC7A9E2B4E888400CC61EE /* PostViewModel.swift */; };
@@ -78,7 +78,7 @@
 		18DC7A8A2B4E4EAC00CC61EE /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		18DC7A8C2B4E64E400CC61EE /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		18DC7A8F2B4E6AEE00CC61EE /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		18DC7A912B4E845800CC61EE /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		18DC7A912B4E845800CC61EE /* PostAPIRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAPIRoute.swift; sourceTree = "<group>"; };
 		18DC7A942B4E84BE00CC61EE /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		18DC7A962B4E86A400CC61EE /* APIParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIParameters.swift; sourceTree = "<group>"; };
 		18DC7A9E2B4E888400CC61EE /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
@@ -196,6 +196,14 @@
 			path = AbstractViewModel;
 			sourceTree = "<group>";
 		};
+		184230C42B4FEDF7002BDD34 /* APIRoutes */ = {
+			isa = PBXGroup;
+			children = (
+				18DC7A912B4E845800CC61EE /* PostAPIRoute.swift */,
+			);
+			path = APIRoutes;
+			sourceTree = "<group>";
+		};
 		18AE3CC92B46ED0A00A188F4 = {
 			isa = PBXGroup;
 			children = (
@@ -260,9 +268,9 @@
 		18AE3CFF2B46EE5600A188F4 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				184230C42B4FEDF7002BDD34 /* APIRoutes */,
 				18DC7A8A2B4E4EAC00CC61EE /* APIClient.swift */,
 				18DC7A8C2B4E64E400CC61EE /* APIConstants.swift */,
-				18DC7A912B4E845800CC61EE /* APIRouter.swift */,
 				18DC7A962B4E86A400CC61EE /* APIParameters.swift */,
 			);
 			path = NetworkLayer;
@@ -472,7 +480,7 @@
 				18DC7A9F2B4E888400CC61EE /* PostViewModel.swift in Sources */,
 				18DC7A952B4E84BE00CC61EE /* PostModel.swift in Sources */,
 				18DC7A8D2B4E64E400CC61EE /* APIConstants.swift in Sources */,
-				18DC7A922B4E845800CC61EE /* APIRouter.swift in Sources */,
+				18DC7A922B4E845800CC61EE /* PostAPIRoute.swift in Sources */,
 				18DC7AA32B4E8C6100CC61EE /* PostListView.swift in Sources */,
 				184230AC2B4FBE39002BDD34 /* PostRemoteApiProtocol.swift in Sources */,
 				18AE3CD82B46ED0A00A188F4 /* ContentView.swift in Sources */,
