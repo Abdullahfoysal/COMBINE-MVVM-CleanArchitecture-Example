@@ -8,6 +8,9 @@
  - Created by: Sajjad Sarkoobi
 
 @ Clean Architecture with MVVM & COMBINE Network Call
+ - Core
+   - AbstractViewModels
+   - AbstractViewModelFactory
  - Data
    - Models
    - RepositoryImp
@@ -19,11 +22,11 @@
      - Local
  - Domain
    - Usecases
-   - RepositoryProtocols
+   - RepositoryProtocol
    - Entities
  - Presentation
-   - ViewModel
-   - View
+   - ViewModels
+   - Views
 
 ## Dummy Post & Comment Screen
 <div display: flex; justify-content: space-evenly; align-items: center;  max-width: 30%;>
