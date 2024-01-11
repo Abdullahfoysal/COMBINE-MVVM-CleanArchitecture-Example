@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class PostViewModel: AbstractViewModel {
-    @Published var posts: [PostModel] = []
+    @Published var posts: [PostEntity] = []
     @Published var comments: [Comment] = []
     var cancelable: Set<AnyCancellable> = []
     let getPostListUsecase: GetPostListUsecase //= GetPostListUsecase(postRepository: PostRepositoryImp())
@@ -24,7 +24,7 @@ class PostViewModel: AbstractViewModel {
     
     //GET Method
     func getPosts() {
-        getPostListUsecase.execute(APIRouter.GetPosts())
+        getPostListUsecase.execute(PostAPIRoute.GetPosts())
             .sink { _ in }
             receiveValue: { [weak self] posts in
                 self?.posts = posts
@@ -32,7 +32,7 @@ class PostViewModel: AbstractViewModel {
     }
     //GET with Query
     func getPostComments(postId: Int) {
-        getCommentListUsecase.execute(APIRouter.GetPostComments(queryParams: APIParameters.PostCommentParams(postId: postId)))
+        getCommentListUsecase.execute(PostAPIRoute.GetPostComments(queryParams: APIParameters.PostCommentParams(postId: postId)))
             .sink { _ in
                 
             } receiveValue: {[weak self] comments in
@@ -43,7 +43,7 @@ class PostViewModel: AbstractViewModel {
     //POST Method
     func postNewPost() {
         let postModel = PostModel(userId: 1, id: 1, title: "foysal title", body: "foysal body")
-        addNewPostUsecase.execute(APIRouter.PostNewPost(body: postModel))
+        addNewPostUsecase.execute(PostAPIRoute.PostNewPost(body: postModel))
             .sink { _ in
                 
             } receiveValue: { response in

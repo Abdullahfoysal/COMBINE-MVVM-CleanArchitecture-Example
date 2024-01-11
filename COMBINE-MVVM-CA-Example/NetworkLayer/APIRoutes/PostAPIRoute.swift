@@ -10,7 +10,7 @@ import Foundation
 struct PostAPIRoute {
     //Get Request
     struct GetPosts: Request {
-        typealias ReturnType = [PostModel]
+        typealias ReturnType = [PostEntity]
         
         var path: String = "/posts"
         var method: HTTPMethod = .get

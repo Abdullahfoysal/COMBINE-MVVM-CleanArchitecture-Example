@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PostEntity {
+struct PostEntity: Codable,Identifiable {
     let id: Int
     let title: String
     let body: String
