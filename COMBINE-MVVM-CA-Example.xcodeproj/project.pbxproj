@@ -12,6 +12,8 @@
 		184230AC2B4FBE39002BDD34 /* PostRemoteApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230AB2B4FBE39002BDD34 /* PostRemoteApiProtocol.swift */; };
 		184230AE2B4FC20A002BDD34 /* PostRemoteApiImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230AD2B4FC20A002BDD34 /* PostRemoteApiImp.swift */; };
 		184230B02B4FC2CB002BDD34 /* PostRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230AF2B4FC2CB002BDD34 /* PostRepositoryImp.swift */; };
+		184230B22B4FD1E4002BDD34 /* PostUsecaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230B12B4FD1E4002BDD34 /* PostUsecaseProtocol.swift */; };
+		184230B42B4FD29D002BDD34 /* GetPostListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230B32B4FD29D002BDD34 /* GetPostListUsecase.swift */; };
 		18AE3CD62B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE3CD52B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift */; };
 		18AE3CD82B46ED0A00A188F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE3CD72B46ED0A00A188F4 /* ContentView.swift */; };
 		18AE3CDA2B46ED0C00A188F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AE3CD92B46ED0C00A188F4 /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		184230AB2B4FBE39002BDD34 /* PostRemoteApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteApiProtocol.swift; sourceTree = "<group>"; };
 		184230AD2B4FC20A002BDD34 /* PostRemoteApiImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteApiImp.swift; sourceTree = "<group>"; };
 		184230AF2B4FC2CB002BDD34 /* PostRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImp.swift; sourceTree = "<group>"; };
+		184230B12B4FD1E4002BDD34 /* PostUsecaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUsecaseProtocol.swift; sourceTree = "<group>"; };
+		184230B32B4FD29D002BDD34 /* GetPostListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostListUsecase.swift; sourceTree = "<group>"; };
 		18AE3CD22B46ED0A00A188F4 /* COMBINE-MVVM-CA-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COMBINE-MVVM-CA-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AE3CD52B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COMBINE_MVVM_CA_ExampleApp.swift; sourceTree = "<group>"; };
 		18AE3CD72B46ED0A00A188F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 		184230A22B4FBC80002BDD34 /* Usecases */ = {
 			isa = PBXGroup;
 			children = (
+				184230B12B4FD1E4002BDD34 /* PostUsecaseProtocol.swift */,
+				184230B32B4FD29D002BDD34 /* GetPostListUsecase.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -142,6 +148,7 @@
 		184230A52B4FBCA6002BDD34 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				18DC7A942B4E84BE00CC61EE /* PostModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,7 +243,6 @@
 		18DC7A932B4E84B200CC61EE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				18DC7A942B4E84BE00CC61EE /* PostModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -439,9 +445,11 @@
 				184230AA2B4FBD81002BDD34 /* PostRepositoryProtocol.swift in Sources */,
 				18DC7A972B4E86A400CC61EE /* APIParameters.swift in Sources */,
 				184230AE2B4FC20A002BDD34 /* PostRemoteApiImp.swift in Sources */,
+				184230B22B4FD1E4002BDD34 /* PostUsecaseProtocol.swift in Sources */,
 				18DC7AA52B4EA4B300CC61EE /* PostCommentListView.swift in Sources */,
 				184230A82B4FBD0D002BDD34 /* PostEntity.swift in Sources */,
 				184230B02B4FC2CB002BDD34 /* PostRepositoryImp.swift in Sources */,
+				184230B42B4FD29D002BDD34 /* GetPostListUsecase.swift in Sources */,
 				18AE3CD62B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
