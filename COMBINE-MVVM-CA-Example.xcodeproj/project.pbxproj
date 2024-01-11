@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184230A82B4FBD0D002BDD34 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230A72B4FBD0D002BDD34 /* PostEntity.swift */; };
+		184230AA2B4FBD81002BDD34 /* PostRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230A92B4FBD81002BDD34 /* PostRepositoryProtocol.swift */; };
+		184230AC2B4FBE39002BDD34 /* PostRemoteApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230AB2B4FBE39002BDD34 /* PostRemoteApiProtocol.swift */; };
+		184230AE2B4FC20A002BDD34 /* PostRemoteApiImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230AD2B4FC20A002BDD34 /* PostRemoteApiImp.swift */; };
+		184230B02B4FC2CB002BDD34 /* PostRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230AF2B4FC2CB002BDD34 /* PostRepositoryImp.swift */; };
 		18AE3CD62B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE3CD52B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift */; };
 		18AE3CD82B46ED0A00A188F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE3CD72B46ED0A00A188F4 /* ContentView.swift */; };
 		18AE3CDA2B46ED0C00A188F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AE3CD92B46ED0C00A188F4 /* Assets.xcassets */; };
@@ -43,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184230A72B4FBD0D002BDD34 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
+		184230A92B4FBD81002BDD34 /* PostRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryProtocol.swift; sourceTree = "<group>"; };
+		184230AB2B4FBE39002BDD34 /* PostRemoteApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteApiProtocol.swift; sourceTree = "<group>"; };
+		184230AD2B4FC20A002BDD34 /* PostRemoteApiImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteApiImp.swift; sourceTree = "<group>"; };
+		184230AF2B4FC2CB002BDD34 /* PostRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImp.swift; sourceTree = "<group>"; };
 		18AE3CD22B46ED0A00A188F4 /* COMBINE-MVVM-CA-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COMBINE-MVVM-CA-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AE3CD52B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COMBINE_MVVM_CA_ExampleApp.swift; sourceTree = "<group>"; };
 		18AE3CD72B46ED0A00A188F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +99,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184230A02B4FBC5D002BDD34 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				184230A72B4FBD0D002BDD34 /* PostEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		184230A12B4FBC6A002BDD34 /* RepositoryProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				184230A92B4FBD81002BDD34 /* PostRepositoryProtocol.swift */,
+			);
+			path = RepositoryProtocols;
+			sourceTree = "<group>";
+		};
+		184230A22B4FBC80002BDD34 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		184230A32B4FBC98002BDD34 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				184230A42B4FBCA0002BDD34 /* Remote */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		184230A42B4FBCA0002BDD34 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				184230AB2B4FBE39002BDD34 /* PostRemoteApiProtocol.swift */,
+				184230AD2B4FC20A002BDD34 /* PostRemoteApiImp.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		184230A52B4FBCA6002BDD34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		184230A62B4FBCB5002BDD34 /* RepositoryImp */ = {
+			isa = PBXGroup;
+			children = (
+				184230AF2B4FC2CB002BDD34 /* PostRepositoryImp.swift */,
+			);
+			path = RepositoryImp;
+			sourceTree = "<group>";
+		};
 		18AE3CC92B46ED0A00A188F4 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +263,9 @@
 		18DC7A9A2B4E885C00CC61EE /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				184230A22B4FBC80002BDD34 /* Usecases */,
+				184230A12B4FBC6A002BDD34 /* RepositoryProtocols */,
+				184230A02B4FBC5D002BDD34 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -205,6 +273,9 @@
 		18DC7A9B2B4E886200CC61EE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				184230A62B4FBCB5002BDD34 /* RepositoryImp */,
+				184230A52B4FBCA6002BDD34 /* Models */,
+				184230A32B4FBC98002BDD34 /* Sources */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -361,11 +432,16 @@
 				18DC7A8D2B4E64E400CC61EE /* APIConstants.swift in Sources */,
 				18DC7A922B4E845800CC61EE /* APIRouter.swift in Sources */,
 				18DC7AA32B4E8C6100CC61EE /* PostListView.swift in Sources */,
+				184230AC2B4FBE39002BDD34 /* PostRemoteApiProtocol.swift in Sources */,
 				18AE3CD82B46ED0A00A188F4 /* ContentView.swift in Sources */,
 				18DC7A902B4E6AEE00CC61EE /* Log.swift in Sources */,
 				18DC7A8B2B4E4EAC00CC61EE /* APIClient.swift in Sources */,
+				184230AA2B4FBD81002BDD34 /* PostRepositoryProtocol.swift in Sources */,
 				18DC7A972B4E86A400CC61EE /* APIParameters.swift in Sources */,
+				184230AE2B4FC20A002BDD34 /* PostRemoteApiImp.swift in Sources */,
 				18DC7AA52B4EA4B300CC61EE /* PostCommentListView.swift in Sources */,
+				184230A82B4FBD0D002BDD34 /* PostEntity.swift in Sources */,
+				184230B02B4FC2CB002BDD34 /* PostRepositoryImp.swift in Sources */,
 				18AE3CD62B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
