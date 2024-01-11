@@ -22,7 +22,7 @@
        - Remote
          - RemoteApiProtocol
          - RemoteApiImp
-     - Local
+       - Local
    - Domain
      - Usecases
      - RepositoryProtocol
