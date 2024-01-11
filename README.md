@@ -8,6 +8,22 @@
  - Created by: Sajjad Sarkoobi
 
 @ Clean Architecture with MVVM & COMBINE Network Call
+ - Data
+   - Models
+   - RepositoryImp
+     - RepositoryImp
+   - Sources
+     - Remote
+       - RemoteApiProtocol
+       - RemoteApiImp
+     - Local
+ - Domain
+   - Usecases
+   - RepositoryProtocols
+   - Entities
+ - Presentation
+   - ViewModel
+   - View
 
 ## Dummy Post & Comment Screen
 <div display: flex; justify-content: space-evenly; align-items: center;  max-width: 30%;>
