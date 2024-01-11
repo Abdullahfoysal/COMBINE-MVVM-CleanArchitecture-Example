@@ -104,7 +104,9 @@ extension Request {
     ///  - Parameter baseURL: API Base URL to be used
     ///  - Returns: A ready to use URLRequest
     func asURLRequest(baseURL: String) -> URLRequest? {
-        guard var urlComponents = URLComponents(string: baseURL) else { return nil }
+        var urlComponents = URLComponents() //else { return nil }
+        urlComponents.scheme = "https"
+        urlComponents.host = baseURL
         urlComponents.path = "\(urlComponents.path)\(path)"
         urlComponents.queryItems = addQueryItems(queryParams: queryParams)
         guard let finalURL = urlComponents.url else { return nil }
@@ -207,7 +209,8 @@ struct APIClient {
     /// - Parameter request: Request to Dispatch
     /// - Returns: A publisher containing decoded data or an error
      func dispatch<R: Request>(_ request: R) -> AnyPublisher<R.ReturnType, NetworkRequestError> {
-        guard let urlRequest = request.asURLRequest(baseURL: APIConstansts.baseUrl) else {
+         let baseUrl =  try? EnvConfig.value(EnvConfig.BASE_URL)
+         guard let urlRequest = request.asURLRequest(baseURL: baseUrl ?? "") else {
             return Fail(outputType: R.ReturnType.self, failure: NetworkRequestError.badRequest).eraseToAnyPublisher()
         }
         typealias RequestPublisher = AnyPublisher<R.ReturnType,NetworkRequestError>

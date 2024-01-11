@@ -30,8 +30,8 @@
             filePath = "COMBINE-MVVM-CA-Example/NetworkLayer/APIClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "dispatch(request:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "COMBINE-MVVM-CA-Example/NetworkLayer/APIClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
             landmarkName = "dispatch(request:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -66,6 +66,69 @@
             endingLineNumber = "30"
             landmarkName = "getPosts()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F8DE525-DA0C-41A2-8118-CFF5C52B1D34"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "COMBINE-MVVM-CA-Example/NetworkLayer/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
+            landmarkName = "dispatch(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8F8DE525-DA0C-41A2-8118-CFF5C52B1D34 - 70e8a150e2b0403"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "COMBINE_MVVM_CA_Example.APIClient.dispatch&lt;&#x3c4;_0_0 where &#x3c4;_0_0: COMBINE_MVVM_CA_Example.Request&gt;(&#x3c4;_0_0) -&gt; Combine.AnyPublisher&lt;&#x3c4;_0_0.ReturnType, COMBINE_MVVM_CA_Example.NetworkRequestError&gt;"
+                  moduleName = "COMBINE-MVVM-CA-Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noban/Documents/IOSDEV/COMBINE-MVVM-CA-Example/COMBINE-MVVM-CA-Example/NetworkLayer/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "215"
+                  endingLineNumber = "215"
+                  offsetFromSymbolStart = "569">
+               </Location>
+               <Location
+                  uuid = "8F8DE525-DA0C-41A2-8118-CFF5C52B1D34 - 70e8a150e2b04c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "COMBINE_MVVM_CA_Example.APIClient.dispatch&lt;&#x3c4;_0_0 where &#x3c4;_0_0: COMBINE_MVVM_CA_Example.Request&gt;(&#x3c4;_0_0) -&gt; Combine.AnyPublisher&lt;&#x3c4;_0_0.ReturnType, COMBINE_MVVM_CA_Example.NetworkRequestError&gt;"
+                  moduleName = "COMBINE-MVVM-CA-Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noban/Documents/IOSDEV/COMBINE-MVVM-CA-Example/COMBINE-MVVM-CA-Example/NetworkLayer/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "213"
+                  endingLineNumber = "213"
+                  offsetFromSymbolStart = "491">
+               </Location>
+               <Location
+                  uuid = "8F8DE525-DA0C-41A2-8118-CFF5C52B1D34 - 70e8a150e2b04c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "COMBINE_MVVM_CA_Example.APIClient.dispatch&lt;&#x3c4;_0_0 where &#x3c4;_0_0: COMBINE_MVVM_CA_Example.Request&gt;(&#x3c4;_0_0) -&gt; Combine.AnyPublisher&lt;&#x3c4;_0_0.ReturnType, COMBINE_MVVM_CA_Example.NetworkRequestError&gt;"
+                  moduleName = "COMBINE-MVVM-CA-Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noban/Documents/IOSDEV/COMBINE-MVVM-CA-Example/COMBINE-MVVM-CA-Example/NetworkLayer/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "213"
+                  endingLineNumber = "213"
+                  offsetFromSymbolStart = "559">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

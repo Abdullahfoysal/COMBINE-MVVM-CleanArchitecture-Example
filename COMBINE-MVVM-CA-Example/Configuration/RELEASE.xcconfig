@@ -1,0 +1,10 @@
+//
+//  RELEASE.xcconfig
+//  COMBINE-MVVM-CA-Example
+//
+//  Created by KAZ MAC 5 on 11/1/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+BASE_URL = jsonplaceholder.typicode.com

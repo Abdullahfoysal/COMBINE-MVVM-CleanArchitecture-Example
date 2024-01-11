@@ -7,9 +7,9 @@
 
 import Foundation
 
-final class APIConstansts {
-    static var baseUrl: String = "https://jsonplaceholder.typicode.com"
-}
+//final class APIConstansts {
+//    static var baseUrl: String = "https://jsonplaceholder.typicode.com"
+//}
 
 enum HTTPHeaderField: String {
     case authentication = "Authentication"
