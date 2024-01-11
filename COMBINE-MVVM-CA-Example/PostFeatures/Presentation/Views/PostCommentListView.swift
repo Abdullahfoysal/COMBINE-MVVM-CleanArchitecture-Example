@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct PostCommentListView: View {
-    @ObservedObject var viewModel: PostViewModel = PostViewModel()
+    @ObservedObject var viewModel: PostViewModel
+    let postId: Int
+    
     var body: some View {
     
             List(viewModel.comments) { comment in
@@ -22,21 +24,16 @@ struct PostCommentListView: View {
                     }
                     .padding()
                 
-
-                       // Add padding inside the card's VStack
-                
-                
-                
             }.navigationTitle("Post Comments")
      
         .onAppear {
-            viewModel.getPostComments(postId: 1)
+            viewModel.getPostComments(postId: postId)
         }
     }
 }
 
 struct PostCommentListView_Previews: PreviewProvider {
     static var previews: some View {
-        PostCommentListView(viewModel: PostViewModel())
+        PostCommentListView(viewModel: ViewModelFactory().makePostViewModel(), postId: 1)
     }
 }

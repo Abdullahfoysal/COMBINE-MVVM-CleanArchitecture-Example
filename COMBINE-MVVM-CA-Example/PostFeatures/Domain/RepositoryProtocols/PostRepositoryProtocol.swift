@@ -9,7 +9,6 @@ import Foundation
 import Combine
 
 protocol PostRepositoryProtocol {
-   
     func getPostList<R: Request>(_ request: R) -> AnyPublisher<R.ReturnType, NetworkRequestError>
     func getPostCommentList<R: Request>(_ request: R) -> AnyPublisher<R.ReturnType, NetworkRequestError>
     func addNewPost<R: Request>(_ request: R) -> AnyPublisher<R.ReturnType, NetworkRequestError>

@@ -199,12 +199,14 @@ struct NetworkDispather {
 }
 
 struct APIClient {
-   private static var networkDispatcher: NetworkDispather = NetworkDispather()
+    static let shared = APIClient()
+    
+    private  var networkDispatcher: NetworkDispather = NetworkDispather()
     
     /// Dispatches a Request and returns a publisher
     /// - Parameter request: Request to Dispatch
     /// - Returns: A publisher containing decoded data or an error
-    static func dispatch<R: Request>(_ request: R) -> AnyPublisher<R.ReturnType, NetworkRequestError> {
+     func dispatch<R: Request>(_ request: R) -> AnyPublisher<R.ReturnType, NetworkRequestError> {
         guard let urlRequest = request.asURLRequest(baseURL: APIConstansts.baseUrl) else {
             return Fail(outputType: R.ReturnType.self, failure: NetworkRequestError.badRequest).eraseToAnyPublisher()
         }

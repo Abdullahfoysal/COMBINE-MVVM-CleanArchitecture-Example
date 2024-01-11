@@ -9,7 +9,11 @@ import Foundation
 import Combine
 
 class PostRepositoryImp: PostRepositoryProtocol {
-    let postRemoteApi: PostRemoteApiProtocol = PostRemoteApiImp()
+    let postRemoteApi: PostRemoteApiProtocol
+    
+    init(postRemoteApi: PostRemoteApiProtocol) {
+        self.postRemoteApi = postRemoteApi
+    }
     
     func getPostList<R>(_ request: R) -> AnyPublisher<R.ReturnType, NetworkRequestError> where R : Request {
         return postRemoteApi.getPostListRemote(request)

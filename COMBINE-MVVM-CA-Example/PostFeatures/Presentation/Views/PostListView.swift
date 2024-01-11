@@ -8,26 +8,22 @@
 import SwiftUI
 
 struct PostListView: View {
-    @ObservedObject var viewModel: PostViewModel = PostViewModel()
+    @StateObject  var viewModel: PostViewModel
     var body: some View {
         NavigationView {
             List(viewModel.posts) { post in
                 NavigationLink {
-                    PostCommentListView()
+                    PostCommentListView(viewModel: viewModel, postId: post.id)
                 } label: {
                     VStack(alignment: .leading) {
-                        Text(post.title ?? "n/a")
+                        Text(post.title)
                             .font(.title3)
                             .foregroundColor(.blue)
-                        Text(post.body ?? "n/a")
+                        Text(post.body)
                             .font(.body)
                     }
                     .padding()
                 }
-
-                       // Add padding inside the card's VStack
-                
-                
                 
             }.navigationTitle("Post List View")
                 .toolbar {
@@ -45,6 +41,6 @@ struct PostListView: View {
 
 struct PostListView_Previews: PreviewProvider {
     static var previews: some View {
-        PostListView()
+        PostListView(viewModel: ViewModelFactory().makePostViewModel())
     }
 }

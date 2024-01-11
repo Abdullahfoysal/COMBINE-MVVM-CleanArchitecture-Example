@@ -14,6 +14,10 @@
 		184230B02B4FC2CB002BDD34 /* PostRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230AF2B4FC2CB002BDD34 /* PostRepositoryImp.swift */; };
 		184230B22B4FD1E4002BDD34 /* PostUsecaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230B12B4FD1E4002BDD34 /* PostUsecaseProtocol.swift */; };
 		184230B42B4FD29D002BDD34 /* GetPostListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230B32B4FD29D002BDD34 /* GetPostListUsecase.swift */; };
+		184230B62B4FD561002BDD34 /* GetCommentListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230B52B4FD561002BDD34 /* GetCommentListUsecase.swift */; };
+		184230B82B4FD68A002BDD34 /* AddNewPostUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230B72B4FD68A002BDD34 /* AddNewPostUsecase.swift */; };
+		184230BC2B4FD859002BDD34 /* AbstractViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230BB2B4FD859002BDD34 /* AbstractViewModelFactory.swift */; };
+		184230C12B4FDF81002BDD34 /* AbstractViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184230C02B4FDF81002BDD34 /* AbstractViewModel.swift */; };
 		18AE3CD62B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE3CD52B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift */; };
 		18AE3CD82B46ED0A00A188F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE3CD72B46ED0A00A188F4 /* ContentView.swift */; };
 		18AE3CDA2B46ED0C00A188F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AE3CD92B46ED0C00A188F4 /* Assets.xcassets */; };
@@ -57,6 +61,10 @@
 		184230AF2B4FC2CB002BDD34 /* PostRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImp.swift; sourceTree = "<group>"; };
 		184230B12B4FD1E4002BDD34 /* PostUsecaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUsecaseProtocol.swift; sourceTree = "<group>"; };
 		184230B32B4FD29D002BDD34 /* GetPostListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostListUsecase.swift; sourceTree = "<group>"; };
+		184230B52B4FD561002BDD34 /* GetCommentListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentListUsecase.swift; sourceTree = "<group>"; };
+		184230B72B4FD68A002BDD34 /* AddNewPostUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPostUsecase.swift; sourceTree = "<group>"; };
+		184230BB2B4FD859002BDD34 /* AbstractViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewModelFactory.swift; sourceTree = "<group>"; };
+		184230C02B4FDF81002BDD34 /* AbstractViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewModel.swift; sourceTree = "<group>"; };
 		18AE3CD22B46ED0A00A188F4 /* COMBINE-MVVM-CA-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COMBINE-MVVM-CA-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AE3CD52B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COMBINE_MVVM_CA_ExampleApp.swift; sourceTree = "<group>"; };
 		18AE3CD72B46ED0A00A188F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +132,8 @@
 			children = (
 				184230B12B4FD1E4002BDD34 /* PostUsecaseProtocol.swift */,
 				184230B32B4FD29D002BDD34 /* GetPostListUsecase.swift */,
+				184230B52B4FD561002BDD34 /* GetCommentListUsecase.swift */,
+				184230B72B4FD68A002BDD34 /* AddNewPostUsecase.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -161,6 +171,31 @@
 			path = RepositoryImp;
 			sourceTree = "<group>";
 		};
+		184230B92B4FD803002BDD34 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				184230BD2B4FDF5B002BDD34 /* AbstractViewModel */,
+				184230BA2B4FD80C002BDD34 /* AbstractViewModelFactory */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		184230BA2B4FD80C002BDD34 /* AbstractViewModelFactory */ = {
+			isa = PBXGroup;
+			children = (
+				184230BB2B4FD859002BDD34 /* AbstractViewModelFactory.swift */,
+			);
+			path = AbstractViewModelFactory;
+			sourceTree = "<group>";
+		};
+		184230BD2B4FDF5B002BDD34 /* AbstractViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				184230C02B4FDF81002BDD34 /* AbstractViewModel.swift */,
+			);
+			path = AbstractViewModel;
+			sourceTree = "<group>";
+		};
 		18AE3CC92B46ED0A00A188F4 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +219,7 @@
 		18AE3CD42B46ED0A00A188F4 /* COMBINE-MVVM-CA-Example */ = {
 			isa = PBXGroup;
 			children = (
+				184230B92B4FD803002BDD34 /* Core */,
 				18DC7A982B4E883600CC61EE /* PostFeatures */,
 				18DC7A932B4E84B200CC61EE /* Models */,
 				18DC7A8E2B4E6AD800CC61EE /* Utilites */,
@@ -448,7 +484,11 @@
 				184230B22B4FD1E4002BDD34 /* PostUsecaseProtocol.swift in Sources */,
 				18DC7AA52B4EA4B300CC61EE /* PostCommentListView.swift in Sources */,
 				184230A82B4FBD0D002BDD34 /* PostEntity.swift in Sources */,
+				184230BC2B4FD859002BDD34 /* AbstractViewModelFactory.swift in Sources */,
+				184230C12B4FDF81002BDD34 /* AbstractViewModel.swift in Sources */,
 				184230B02B4FC2CB002BDD34 /* PostRepositoryImp.swift in Sources */,
+				184230B82B4FD68A002BDD34 /* AddNewPostUsecase.swift in Sources */,
+				184230B62B4FD561002BDD34 /* GetCommentListUsecase.swift in Sources */,
 				184230B42B4FD29D002BDD34 /* GetPostListUsecase.swift in Sources */,
 				18AE3CD62B46ED0A00A188F4 /* COMBINE_MVVM_CA_ExampleApp.swift in Sources */,
 			);

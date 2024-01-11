@@ -9,16 +9,21 @@ import Foundation
 import Combine
 
 class PostRemoteApiImp: PostRemoteApiProtocol {
+    let apiClient: APIClient
+    
+    init(apiClient: APIClient) {
+        self.apiClient = apiClient
+    }
     func getPostListRemote<R>(_ request: R) -> AnyPublisher<R.ReturnType, NetworkRequestError> where R : Request {
-          return APIClient.dispatch(request)
+          return apiClient.dispatch(request)
     }
     
     func getCommentListRemote<R>(_ request: R) -> AnyPublisher<R.ReturnType, NetworkRequestError> where R : Request {
-        return APIClient.dispatch(request)
+        return apiClient.dispatch(request)
     }
     
     func addNewPostRemote<R>(_ request: R) -> AnyPublisher<R.ReturnType, NetworkRequestError> where R : Request {
-        return APIClient.dispatch(request)
+        return apiClient.dispatch(request)
     }
     
         

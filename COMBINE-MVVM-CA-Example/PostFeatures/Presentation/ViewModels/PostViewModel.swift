@@ -8,24 +8,31 @@
 import Foundation
 import Combine
 
-class PostViewModel: ObservableObject {
+class PostViewModel: AbstractViewModel {
     @Published var posts: [PostModel] = []
     @Published var comments: [Comment] = []
     var cancelable: Set<AnyCancellable> = []
+    let getPostListUsecase: GetPostListUsecase //= GetPostListUsecase(postRepository: PostRepositoryImp())
+    let getCommentListUsecase: GetCommentListUsecase
+    let addNewPostUsecase: AddnewPostUsecase
     
-    
+    init(getPostListUsecase: GetPostListUsecase, getCommentListUsecase: GetCommentListUsecase, addNewPostUsecase: AddnewPostUsecase) {
+        self.getPostListUsecase = getPostListUsecase
+        self.getCommentListUsecase = getCommentListUsecase
+        self.addNewPostUsecase = addNewPostUsecase
+    }
     
     //GET Method
     func getPosts() {
-        APIClient.dispatch(APIRouter.GetPosts())
+        getPostListUsecase.execute(APIRouter.GetPosts())
             .sink { _ in }
             receiveValue: { [weak self] posts in
                 self?.posts = posts
             }.store(in: &cancelable)
     }
-    
+    //GET with Query
     func getPostComments(postId: Int) {
-        APIClient.dispatch(APIRouter.GetPostComments(queryParams: APIParameters.PostCommentParams(postId: postId)))
+        getCommentListUsecase.execute(APIRouter.GetPostComments(queryParams: APIParameters.PostCommentParams(postId: postId)))
             .sink { _ in
                 
             } receiveValue: {[weak self] comments in
@@ -33,13 +40,15 @@ class PostViewModel: ObservableObject {
             }.store(in: &cancelable)
     }
     
+    //POST Method
     func postNewPost() {
         let postModel = PostModel(userId: 1, id: 1, title: "foysal title", body: "foysal body")
-        APIClient.dispatch(APIRouter.PostNewPost(body: postModel))
+        addNewPostUsecase.execute(APIRouter.PostNewPost(body: postModel))
             .sink { _ in
                 
             } receiveValue: { response in
-                    print(response)
+                print(response)
+                
             }.store(in: &cancelable)
 
     }
