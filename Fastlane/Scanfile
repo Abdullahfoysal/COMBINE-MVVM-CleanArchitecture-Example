@@ -4,7 +4,7 @@
 workspace "COMBINE-MVVM-CA-Example.xcodeproj/project.xcworkspace"
 scheme "COMBINE-MVVM-CA-Example"
 sdk "iphonesimulator"
-device "iPhone 14"
+device "iPhone 8"
 code_coverage true
 xcargs '-parallelizeTargets'
 prelaunch_simulator true
