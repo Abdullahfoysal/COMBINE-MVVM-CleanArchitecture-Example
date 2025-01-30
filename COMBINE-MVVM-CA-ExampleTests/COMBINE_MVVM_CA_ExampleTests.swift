@@ -15,6 +15,10 @@ final class COMBINE_MVVM_CA_ExampleTests: XCTestCase {
     func testExample() throws {
         XCTAssertEqual(2*2, 4)
     }
+    
+    func test2Example() throws {
+        XCTAssertEqual(2*2, 3)
+    }
 
 
 }
